@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<swiper indicator-dots="true" 
+  autoplay="true" interval="3000" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='view_1' wx:for="{{renwuInfo}}" bindtap='toDetil' data-index='{{index}}'>
+
+  <view class='view_2'><!--头像部分-->
+     <image src="{{item.images}}"></image>
+      
+  </view>
+
+  <view class='view_3'><!--标题部分-->
+           <text>这个是标题部分</text>
+
+
+
+          <view class='view_4'><!--详情部分-->
+            <text>这里是写详情信息的地方</text>
+          </view>
+      
+          <view class='view_5'><!--抢单按钮-->
+          
+          </view>
+  </view>
+      
+  
+
+</view>
+
+
+
+<view class='view_bottom'>
+<text>到底了！！！</text>
+</view>
